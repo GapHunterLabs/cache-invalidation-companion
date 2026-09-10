@@ -5,6 +5,12 @@ hand-rolled `Map`-backed cache field (populated by a
 `computeIfAbsent`/manual `containsKey`+`put` "get-or-compute" pattern),
 when that method never touches the cache field.
 
+## Screenshots
+
+![Screenshot 1](docs/screenshots/Screenshot_1.png)
+
+![Screenshot 2](docs/screenshots/Screenshot_2.png)
+
 ## Why it exists
 
 Stale data served after a real update -- a silent inconsistency
