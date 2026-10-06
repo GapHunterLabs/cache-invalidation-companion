@@ -1,0 +1,11 @@
+<html>
+<body>
+Reports a <code>.save(...)</code> call in a method that never touches the class's own hand-rolled
+<code>Map</code>-backed cache (filled with <code>computeIfAbsent</code> or a <code>containsKey</code> + <code>put</code>
+get-or-compute pattern).
+<!-- tooltip end -->
+<p>After the write, the cache keeps serving the old value: what is read no longer matches what was stored.</p>
+<p>Only a <code>Map</code> cache declared in the same class is checked. <code>@Cacheable</code>, Caffeine and Redis
+caches are not covered.</p>
+</body>
+</html>
